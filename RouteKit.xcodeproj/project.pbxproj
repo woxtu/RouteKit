@@ -10,6 +10,9 @@
 		435264B8204864EF00F23D74 /* RouteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435264AE204864EF00F23D74 /* RouteKit.framework */; };
 		435264BF204864EF00F23D74 /* RouteKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 435264B1204864EF00F23D74 /* RouteKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435264D72048702800F23D74 /* RouteKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D520486FA500F23D74 /* RouteKitTests.swift */; };
+		435264DA2048705600F23D74 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D82048705600F23D74 /* AnyRoute.swift */; };
+		435264DB2048705700F23D74 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D92048705600F23D74 /* Route.swift */; };
+		435264DE2048706C00F23D74 /* AnyRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264DC2048705F00F23D74 /* AnyRouteTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		435264B7204864EF00F23D74 /* RouteKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		435264BE204864EF00F23D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435264D520486FA500F23D74 /* RouteKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteKitTests.swift; sourceTree = "<group>"; };
+		435264D82048705600F23D74 /* AnyRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyRoute.swift; sourceTree = "<group>"; };
+		435264D92048705600F23D74 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		435264DC2048705F00F23D74 /* AnyRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyRouteTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +77,9 @@
 		435264B0204864EF00F23D74 /* RouteKit */ = {
 			isa = PBXGroup;
 			children = (
+				435264D82048705600F23D74 /* AnyRoute.swift */,
 				435264B2204864EF00F23D74 /* Info.plist */,
+				435264D92048705600F23D74 /* Route.swift */,
 				435264B1204864EF00F23D74 /* RouteKit.h */,
 			);
 			path = RouteKit;
@@ -80,6 +88,7 @@
 		435264BB204864EF00F23D74 /* RouteKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				435264DC2048705F00F23D74 /* AnyRouteTests.swift */,
 				435264BE204864EF00F23D74 /* Info.plist */,
 				435264D520486FA500F23D74 /* RouteKitTests.swift */,
 			);
@@ -213,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435264DA2048705600F23D74 /* AnyRoute.swift in Sources */,
+				435264DB2048705700F23D74 /* Route.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435264DE2048706C00F23D74 /* AnyRouteTests.swift in Sources */,
 				435264D72048702800F23D74 /* RouteKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +406,7 @@
 		435264C6204864EF00F23D74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/RouteKitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -407,6 +420,7 @@
 		435264C7204864EF00F23D74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/RouteKitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
