@@ -9,11 +9,12 @@
 import Foundation
 
 struct AnyRoute<T> {
-    let path: String
+    let pattern: Pattern
     let map: (URL, String, String) -> T?
     
     init<R>(_ route: R) where R : Route, R.Response == T {
-        self.path = route.path
+        self.pattern = Pattern(string: route.path)
+
         self.map = { url, parameters, queries in
             do {
                 let parameters = try JSONDecoder().decode(R.Parameters.self, from: parameters.data(using: .utf8)!)

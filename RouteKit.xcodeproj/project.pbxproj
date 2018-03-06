@@ -13,6 +13,9 @@
 		435264DA2048705600F23D74 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D82048705600F23D74 /* AnyRoute.swift */; };
 		435264DB2048705700F23D74 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D92048705600F23D74 /* Route.swift */; };
 		435264DE2048706C00F23D74 /* AnyRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264DC2048705F00F23D74 /* AnyRouteTests.swift */; };
+		436CD125204E408A00BC228D /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD124204E408A00BC228D /* Pattern.swift */; };
+		436CD128204F031400BC228D /* NSRegularExpression+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */; };
+		436CD12A204F054100BC228D /* PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD129204F054100BC228D /* PatternTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		435264D82048705600F23D74 /* AnyRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyRoute.swift; sourceTree = "<group>"; };
 		435264D92048705600F23D74 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		435264DC2048705F00F23D74 /* AnyRouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyRouteTests.swift; sourceTree = "<group>"; };
+		436CD124204E408A00BC228D /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Extension.swift"; sourceTree = "<group>"; };
+		436CD129204F054100BC228D /* PatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,10 @@
 		435264B0204864EF00F23D74 /* RouteKit */ = {
 			isa = PBXGroup;
 			children = (
+				436CD126204F02F400BC228D /* Extensions */,
 				435264D82048705600F23D74 /* AnyRoute.swift */,
 				435264B2204864EF00F23D74 /* Info.plist */,
+				436CD124204E408A00BC228D /* Pattern.swift */,
 				435264D92048705600F23D74 /* Route.swift */,
 				435264B1204864EF00F23D74 /* RouteKit.h */,
 			);
@@ -90,6 +98,7 @@
 			children = (
 				435264DC2048705F00F23D74 /* AnyRouteTests.swift */,
 				435264BE204864EF00F23D74 /* Info.plist */,
+				436CD129204F054100BC228D /* PatternTests.swift */,
 				435264D520486FA500F23D74 /* RouteKitTests.swift */,
 			);
 			path = RouteKitTests;
@@ -109,6 +118,14 @@
 				435264BB204864EF00F23D74 /* RouteKitTests */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		436CD126204F02F400BC228D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436CD125204E408A00BC228D /* Pattern.swift in Sources */,
+				436CD128204F031400BC228D /* NSRegularExpression+Extension.swift in Sources */,
 				435264DA2048705600F23D74 /* AnyRoute.swift in Sources */,
 				435264DB2048705700F23D74 /* Route.swift in Sources */,
 			);
@@ -233,6 +252,7 @@
 			files = (
 				435264DE2048706C00F23D74 /* AnyRouteTests.swift in Sources */,
 				435264D72048702800F23D74 /* RouteKitTests.swift in Sources */,
+				436CD12A204F054100BC228D /* PatternTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
