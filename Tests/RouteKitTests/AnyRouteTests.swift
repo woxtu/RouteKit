@@ -26,8 +26,7 @@ class AnyRouteTests: XCTestCase {
         }
         
         let route = AnyRoute<TestResponse>(TestRoute())
-        let response = route.map(URL(string: "/")!, "{\"x\":\"foo\"}", "{\"x\":\"bar\"}")
-        XCTAssertNotNil(response)
+        let response = route.map(URL(string: "/")!, ["x" : "foo"], ["x" : "bar"])
         XCTAssertEqual(response?.x1, "foo")
         XCTAssertEqual(response?.x2, "bar")
     }
@@ -55,8 +54,7 @@ class AnyRouteTests: XCTestCase {
         }
         
         let route = AnyRoute<TestResponse>(TestRoute())
-        let response = route.map(URL(string: "/")!, "{\"x\":\"foo\"}", "{\"x\":\"bar\"}")
-        XCTAssertNotNil(response)
+        let response = route.map(URL(string: "/")!, ["x" : "foo"], ["x" : "bar"])
         XCTAssertEqual(response?.x1, "foo")
         XCTAssertEqual(response?.x2, "bar")
     }

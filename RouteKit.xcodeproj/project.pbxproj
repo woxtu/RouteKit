@@ -16,6 +16,8 @@
 		436CD125204E408A00BC228D /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD124204E408A00BC228D /* Pattern.swift */; };
 		436CD128204F031400BC228D /* NSRegularExpression+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */; };
 		436CD12A204F054100BC228D /* PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD129204F054100BC228D /* PatternTests.swift */; };
+		436CD12C2050589800BC228D /* PayloadDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12B2050589800BC228D /* PayloadDecoder.swift */; };
+		436CD12E205059D400BC228D /* PayloadDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12D205059D400BC228D /* PayloadDecoderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		436CD124204E408A00BC228D /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
 		436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Extension.swift"; sourceTree = "<group>"; };
 		436CD129204F054100BC228D /* PatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternTests.swift; sourceTree = "<group>"; };
+		436CD12B2050589800BC228D /* PayloadDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadDecoder.swift; sourceTree = "<group>"; };
+		436CD12D205059D400BC228D /* PayloadDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadDecoderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				435264D82048705600F23D74 /* AnyRoute.swift */,
 				435264B2204864EF00F23D74 /* Info.plist */,
 				436CD124204E408A00BC228D /* Pattern.swift */,
+				436CD12B2050589800BC228D /* PayloadDecoder.swift */,
 				435264D92048705600F23D74 /* Route.swift */,
 				435264B1204864EF00F23D74 /* RouteKit.h */,
 			);
@@ -99,6 +104,7 @@
 				435264DC2048705F00F23D74 /* AnyRouteTests.swift */,
 				435264BE204864EF00F23D74 /* Info.plist */,
 				436CD129204F054100BC228D /* PatternTests.swift */,
+				436CD12D205059D400BC228D /* PayloadDecoderTests.swift */,
 				435264D520486FA500F23D74 /* RouteKitTests.swift */,
 			);
 			path = RouteKitTests;
@@ -239,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436CD12C2050589800BC228D /* PayloadDecoder.swift in Sources */,
 				436CD125204E408A00BC228D /* Pattern.swift in Sources */,
 				436CD128204F031400BC228D /* NSRegularExpression+Extension.swift in Sources */,
 				435264DA2048705600F23D74 /* AnyRoute.swift in Sources */,
@@ -253,6 +260,7 @@
 				435264DE2048706C00F23D74 /* AnyRouteTests.swift in Sources */,
 				435264D72048702800F23D74 /* RouteKitTests.swift in Sources */,
 				436CD12A204F054100BC228D /* PatternTests.swift in Sources */,
+				436CD12E205059D400BC228D /* PayloadDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

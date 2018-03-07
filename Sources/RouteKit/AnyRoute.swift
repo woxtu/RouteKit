@@ -10,15 +10,15 @@ import Foundation
 
 struct AnyRoute<T> {
     let pattern: Pattern
-    let map: (URL, String, String) -> T?
+    let map: (URL, [String : String], [String : String]) -> T?
     
     init<R>(_ route: R) where R : Route, R.Response == T {
         self.pattern = Pattern(string: route.path)
 
         self.map = { url, parameters, queries in
             do {
-                let parameters = try JSONDecoder().decode(R.Parameters.self, from: parameters.data(using: .utf8)!)
-                let queries = try JSONDecoder().decode(R.Queries.self, from: queries.data(using: .utf8)!)
+                let parameters = try PayloadDecoder().decode(R.Parameters.self, from: parameters)
+                let queries = try PayloadDecoder().decode(R.Queries.self, from: queries)
                 return route.map(to: url, parameters: parameters, queries: queries)
             } catch {
                 print(error)
