@@ -15,5 +15,5 @@ public protocol Route {
     
     var path: String { get }
     
-    func map(to url: URL, parameters: Parameters, queries: Queries) -> Response?
+    func map(to url: URL, parameters: Parameters, queries: Queries) -> Response
 }

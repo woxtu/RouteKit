@@ -20,7 +20,7 @@ class AnyRouteTests: XCTestCase {
         struct TestRoute: Route {
             let path = "/"
             
-            func map(to url: URL, parameters: [String : String], queries: [String : String]) -> TestResponse? {
+            func map(to url: URL, parameters: [String : String], queries: [String : String]) -> TestResponse {
                 return TestResponse(x1: parameters["x", default: ""], x2: queries["x", default: ""])
             }
         }
@@ -48,7 +48,7 @@ class AnyRouteTests: XCTestCase {
                 let x: String
             }
             
-            func map(to url: URL, parameters: Parameters, queries: Queries) -> TestResponse? {
+            func map(to url: URL, parameters: Parameters, queries: Queries) -> TestResponse {
                 return TestResponse(x1: parameters.x, x2: queries.x)
             }
         }
