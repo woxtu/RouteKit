@@ -38,6 +38,20 @@ struct Pattern {
             .map(String.init)
             .map(Component.init)
     }
+    
+    func match(url: URL) -> [String : String]? {
+        let pathComponents = [url.host].flatMap { $0 } + url.pathComponents.dropFirst() // drop "/"
+        
+        if self.scheme == url.scheme && self.pathComponents == pathComponents.map(Component.init) {
+            return zip(self.pathComponents, pathComponents).reduce(into: [:]) { result, component in
+                if case let .variable(name) = component.0 {
+                    result?[name] = component.1
+                }
+            }
+        } else {
+            return nil
+        }
+    }
 }
 
 extension Pattern.Component : Equatable {
@@ -45,7 +59,7 @@ extension Pattern.Component : Equatable {
         switch (lhs, rhs) {
         case let (.constant(lhs), .constant(rhs)): return lhs == rhs
         case let (.variable(lhs), .variable(rhs)): return lhs == rhs
-        default: return false
+        default: return true
         }
     }
 }
