@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430EC1DA20598E2C00F84EA2 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		435264AE204864EF00F23D74 /* RouteKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouteKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435264B1204864EF00F23D74 /* RouteKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteKit.h; sourceTree = "<group>"; };
 		435264B2204864EF00F23D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		435264A4204864EF00F23D74 = {
 			isa = PBXGroup;
 			children = (
+				430EC1DA20598E2C00F84EA2 /* Package.swift */,
 				435264C8204865F500F23D74 /* Sources */,
 				435264C92048661200F23D74 /* Tests */,
 				435264AF204864EF00F23D74 /* Products */,
