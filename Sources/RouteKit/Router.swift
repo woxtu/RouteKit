@@ -11,6 +11,10 @@ import Foundation
 open class Router<T> {
     private var routes = [AnyRoute<T>]()
     
+    public init() {
+        
+    }
+    
     open func append<R>(route: R) where R : Route, R.Response == T {
         self.routes.append(AnyRoute(route))
     }
