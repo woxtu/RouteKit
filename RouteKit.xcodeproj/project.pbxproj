@@ -7,39 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		435264B8204864EF00F23D74 /* RouteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435264AE204864EF00F23D74 /* RouteKit.framework */; };
-		435264BF204864EF00F23D74 /* RouteKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 435264B1204864EF00F23D74 /* RouteKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		435264D72048702800F23D74 /* RouteKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D520486FA500F23D74 /* RouteKitTests.swift */; };
-		435264DA2048705600F23D74 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D82048705600F23D74 /* AnyRoute.swift */; };
-		435264DB2048705700F23D74 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D92048705600F23D74 /* Route.swift */; };
-		435264DE2048706C00F23D74 /* AnyRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264DC2048705F00F23D74 /* AnyRouteTests.swift */; };
-		435BFF7E2058332700346484 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF7D2058332700346484 /* Router.swift */; };
-		435BFF802058338D00346484 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF7F2058338D00346484 /* URL+Extension.swift */; };
-		435BFF822058347E00346484 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF812058347E00346484 /* RouterTests.swift */; };
-		435BFF8420583A9000346484 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF8320583A9000346484 /* Navigator.swift */; };
-		436CD125204E408A00BC228D /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD124204E408A00BC228D /* Pattern.swift */; };
-		436CD128204F031400BC228D /* NSRegularExpression+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */; };
-		436CD12A204F054100BC228D /* PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD129204F054100BC228D /* PatternTests.swift */; };
-		436CD12C2050589800BC228D /* PayloadDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12B2050589800BC228D /* PayloadDecoder.swift */; };
-		436CD12E205059D400BC228D /* PayloadDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12D205059D400BC228D /* PayloadDecoderTests.swift */; };
+		430EC1EA20598F7600F84EA2 /* RouteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430EC1E120598F7600F84EA2 /* RouteKit.framework */; };
+		430EC1F820598FDB00F84EA2 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D82048705600F23D74 /* AnyRoute.swift */; };
+		430EC1F920598FDB00F84EA2 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF8320583A9000346484 /* Navigator.swift */; };
+		430EC1FA20598FDB00F84EA2 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD124204E408A00BC228D /* Pattern.swift */; };
+		430EC1FB20598FDB00F84EA2 /* PayloadDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12B2050589800BC228D /* PayloadDecoder.swift */; };
+		430EC1FC20598FDB00F84EA2 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D92048705600F23D74 /* Route.swift */; };
+		430EC1FD20598FDB00F84EA2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF7D2058332700346484 /* Router.swift */; };
+		430EC1FE20598FDB00F84EA2 /* NSRegularExpression+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */; };
+		430EC1FF20598FDB00F84EA2 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF7F2058338D00346484 /* URL+Extension.swift */; };
+		430EC20020598FDF00F84EA2 /* AnyRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264DC2048705F00F23D74 /* AnyRouteTests.swift */; };
+		430EC20120598FDF00F84EA2 /* PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD129204F054100BC228D /* PatternTests.swift */; };
+		430EC20220598FDF00F84EA2 /* PayloadDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12D205059D400BC228D /* PayloadDecoderTests.swift */; };
+		430EC20320598FDF00F84EA2 /* RouteKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D520486FA500F23D74 /* RouteKitTests.swift */; };
+		430EC20420598FDF00F84EA2 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF812058347E00346484 /* RouterTests.swift */; };
+		430EC213205991A000F84EA2 /* RouteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430EC20A2059919F00F84EA2 /* RouteKit.framework */; };
+		430EC2212059932F00F84EA2 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D82048705600F23D74 /* AnyRoute.swift */; };
+		430EC2222059932F00F84EA2 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF8320583A9000346484 /* Navigator.swift */; };
+		430EC2232059932F00F84EA2 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD124204E408A00BC228D /* Pattern.swift */; };
+		430EC2242059932F00F84EA2 /* PayloadDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12B2050589800BC228D /* PayloadDecoder.swift */; };
+		430EC2252059932F00F84EA2 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D92048705600F23D74 /* Route.swift */; };
+		430EC2262059932F00F84EA2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF7D2058332700346484 /* Router.swift */; };
+		430EC2272059933200F84EA2 /* NSRegularExpression+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD127204F031400BC228D /* NSRegularExpression+Extension.swift */; };
+		430EC2282059933200F84EA2 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF7F2058338D00346484 /* URL+Extension.swift */; };
+		430EC2292059933600F84EA2 /* AnyRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264DC2048705F00F23D74 /* AnyRouteTests.swift */; };
+		430EC22A2059933600F84EA2 /* PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD129204F054100BC228D /* PatternTests.swift */; };
+		430EC22B2059933600F84EA2 /* PayloadDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12D205059D400BC228D /* PayloadDecoderTests.swift */; };
+		430EC22C2059933600F84EA2 /* RouteKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D520486FA500F23D74 /* RouteKitTests.swift */; };
+		430EC22D2059933600F84EA2 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF812058347E00346484 /* RouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		435264B9204864EF00F23D74 /* PBXContainerItemProxy */ = {
+		430EC1EB20598F7600F84EA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 435264A5204864EF00F23D74 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 435264AD204864EF00F23D74;
-			remoteInfo = RouteKit;
+			remoteGlobalIDString = 430EC1E020598F7600F84EA2;
+			remoteInfo = "RouteKit-iOS";
+		};
+		430EC214205991A000F84EA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435264A5204864EF00F23D74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 430EC2092059919F00F84EA2;
+			remoteInfo = "RouteKit-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		430EC1DA20598E2C00F84EA2 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		435264AE204864EF00F23D74 /* RouteKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouteKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		430EC1E120598F7600F84EA2 /* RouteKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouteKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		430EC1E920598F7600F84EA2 /* RouteKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RouteKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		430EC20A2059919F00F84EA2 /* RouteKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouteKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		430EC212205991A000F84EA2 /* RouteKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RouteKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		435264B1204864EF00F23D74 /* RouteKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteKit.h; sourceTree = "<group>"; };
 		435264B2204864EF00F23D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		435264B7204864EF00F23D74 /* RouteKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouteKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		435264BE204864EF00F23D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435264D520486FA500F23D74 /* RouteKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteKitTests.swift; sourceTree = "<group>"; };
 		435264D82048705600F23D74 /* AnyRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyRoute.swift; sourceTree = "<group>"; };
@@ -57,18 +79,33 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		435264AA204864EF00F23D74 /* Frameworks */ = {
+		430EC1DD20598F7600F84EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		435264B4204864EF00F23D74 /* Frameworks */ = {
+		430EC1E620598F7600F84EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435264B8204864EF00F23D74 /* RouteKit.framework in Frameworks */,
+				430EC1EA20598F7600F84EA2 /* RouteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430EC2062059919F00F84EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430EC20F205991A000F84EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430EC213205991A000F84EA2 /* RouteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +125,10 @@
 		435264AF204864EF00F23D74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				435264AE204864EF00F23D74 /* RouteKit.framework */,
-				435264B7204864EF00F23D74 /* RouteKitTests.xctest */,
+				430EC1E120598F7600F84EA2 /* RouteKit.framework */,
+				430EC1E920598F7600F84EA2 /* RouteKit-iOSTests.xctest */,
+				430EC20A2059919F00F84EA2 /* RouteKit.framework */,
+				430EC212205991A000F84EA2 /* RouteKit-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,51 +190,93 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		435264AB204864EF00F23D74 /* Headers */ = {
+		430EC1DE20598F7600F84EA2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435264BF204864EF00F23D74 /* RouteKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430EC2072059919F00F84EA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		435264AD204864EF00F23D74 /* RouteKit */ = {
+		430EC1E020598F7600F84EA2 /* RouteKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 435264C2204864EF00F23D74 /* Build configuration list for PBXNativeTarget "RouteKit" */;
+			buildConfigurationList = 430EC1F220598F7600F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-iOS" */;
 			buildPhases = (
-				435264A9204864EF00F23D74 /* Sources */,
-				435264AA204864EF00F23D74 /* Frameworks */,
-				435264AB204864EF00F23D74 /* Headers */,
-				435264AC204864EF00F23D74 /* Resources */,
+				430EC1DC20598F7600F84EA2 /* Sources */,
+				430EC1DD20598F7600F84EA2 /* Frameworks */,
+				430EC1DE20598F7600F84EA2 /* Headers */,
+				430EC1DF20598F7600F84EA2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RouteKit;
-			productName = RouteKit;
-			productReference = 435264AE204864EF00F23D74 /* RouteKit.framework */;
+			name = "RouteKit-iOS";
+			productName = "RouteKit-iOS";
+			productReference = 430EC1E120598F7600F84EA2 /* RouteKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		435264B6204864EF00F23D74 /* RouteKitTests */ = {
+		430EC1E820598F7600F84EA2 /* RouteKit-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 435264C5204864EF00F23D74 /* Build configuration list for PBXNativeTarget "RouteKitTests" */;
+			buildConfigurationList = 430EC1F520598F7600F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-iOSTests" */;
 			buildPhases = (
-				435264B3204864EF00F23D74 /* Sources */,
-				435264B4204864EF00F23D74 /* Frameworks */,
-				435264B5204864EF00F23D74 /* Resources */,
+				430EC1E520598F7600F84EA2 /* Sources */,
+				430EC1E620598F7600F84EA2 /* Frameworks */,
+				430EC1E720598F7600F84EA2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				435264BA204864EF00F23D74 /* PBXTargetDependency */,
+				430EC1EC20598F7600F84EA2 /* PBXTargetDependency */,
 			);
-			name = RouteKitTests;
-			productName = RouteKitTests;
-			productReference = 435264B7204864EF00F23D74 /* RouteKitTests.xctest */;
+			name = "RouteKit-iOSTests";
+			productName = "RouteKit-iOSTests";
+			productReference = 430EC1E920598F7600F84EA2 /* RouteKit-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		430EC2092059919F00F84EA2 /* RouteKit-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430EC21B205991A000F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-macOS" */;
+			buildPhases = (
+				430EC2052059919F00F84EA2 /* Sources */,
+				430EC2062059919F00F84EA2 /* Frameworks */,
+				430EC2072059919F00F84EA2 /* Headers */,
+				430EC2082059919F00F84EA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RouteKit-macOS";
+			productName = "RouteKit-macOS";
+			productReference = 430EC20A2059919F00F84EA2 /* RouteKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		430EC211205991A000F84EA2 /* RouteKit-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430EC21E205991A000F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-macOSTests" */;
+			buildPhases = (
+				430EC20E205991A000F84EA2 /* Sources */,
+				430EC20F205991A000F84EA2 /* Frameworks */,
+				430EC210205991A000F84EA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				430EC215205991A000F84EA2 /* PBXTargetDependency */,
+			);
+			name = "RouteKit-macOSTests";
+			productName = "RouteKit-macOSTests";
+			productReference = 430EC212205991A000F84EA2 /* RouteKit-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -208,12 +289,19 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = woxtu;
 				TargetAttributes = {
-					435264AD204864EF00F23D74 = {
+					430EC1E020598F7600F84EA2 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
-					435264B6204864EF00F23D74 = {
+					430EC1E820598F7600F84EA2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					430EC2092059919F00F84EA2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					430EC211205991A000F84EA2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -231,21 +319,37 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				435264AD204864EF00F23D74 /* RouteKit */,
-				435264B6204864EF00F23D74 /* RouteKitTests */,
+				430EC1E020598F7600F84EA2 /* RouteKit-iOS */,
+				430EC2092059919F00F84EA2 /* RouteKit-macOS */,
+				430EC1E820598F7600F84EA2 /* RouteKit-iOSTests */,
+				430EC211205991A000F84EA2 /* RouteKit-macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		435264AC204864EF00F23D74 /* Resources */ = {
+		430EC1DF20598F7600F84EA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		435264B5204864EF00F23D74 /* Resources */ = {
+		430EC1E720598F7600F84EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430EC2082059919F00F84EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430EC210205991A000F84EA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,44 +359,226 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		435264A9204864EF00F23D74 /* Sources */ = {
+		430EC1DC20598F7600F84EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				436CD12C2050589800BC228D /* PayloadDecoder.swift in Sources */,
-				436CD125204E408A00BC228D /* Pattern.swift in Sources */,
-				436CD128204F031400BC228D /* NSRegularExpression+Extension.swift in Sources */,
-				435264DA2048705600F23D74 /* AnyRoute.swift in Sources */,
-				435BFF7E2058332700346484 /* Router.swift in Sources */,
-				435BFF8420583A9000346484 /* Navigator.swift in Sources */,
-				435BFF802058338D00346484 /* URL+Extension.swift in Sources */,
-				435264DB2048705700F23D74 /* Route.swift in Sources */,
+				430EC1FA20598FDB00F84EA2 /* Pattern.swift in Sources */,
+				430EC1FF20598FDB00F84EA2 /* URL+Extension.swift in Sources */,
+				430EC1F820598FDB00F84EA2 /* AnyRoute.swift in Sources */,
+				430EC1F920598FDB00F84EA2 /* Navigator.swift in Sources */,
+				430EC1FC20598FDB00F84EA2 /* Route.swift in Sources */,
+				430EC1FE20598FDB00F84EA2 /* NSRegularExpression+Extension.swift in Sources */,
+				430EC1FD20598FDB00F84EA2 /* Router.swift in Sources */,
+				430EC1FB20598FDB00F84EA2 /* PayloadDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		435264B3204864EF00F23D74 /* Sources */ = {
+		430EC1E520598F7600F84EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435BFF822058347E00346484 /* RouterTests.swift in Sources */,
-				435264DE2048706C00F23D74 /* AnyRouteTests.swift in Sources */,
-				435264D72048702800F23D74 /* RouteKitTests.swift in Sources */,
-				436CD12A204F054100BC228D /* PatternTests.swift in Sources */,
-				436CD12E205059D400BC228D /* PayloadDecoderTests.swift in Sources */,
+				430EC20420598FDF00F84EA2 /* RouterTests.swift in Sources */,
+				430EC20320598FDF00F84EA2 /* RouteKitTests.swift in Sources */,
+				430EC20220598FDF00F84EA2 /* PayloadDecoderTests.swift in Sources */,
+				430EC20120598FDF00F84EA2 /* PatternTests.swift in Sources */,
+				430EC20020598FDF00F84EA2 /* AnyRouteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430EC2052059919F00F84EA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430EC2232059932F00F84EA2 /* Pattern.swift in Sources */,
+				430EC2282059933200F84EA2 /* URL+Extension.swift in Sources */,
+				430EC2212059932F00F84EA2 /* AnyRoute.swift in Sources */,
+				430EC2222059932F00F84EA2 /* Navigator.swift in Sources */,
+				430EC2252059932F00F84EA2 /* Route.swift in Sources */,
+				430EC2272059933200F84EA2 /* NSRegularExpression+Extension.swift in Sources */,
+				430EC2262059932F00F84EA2 /* Router.swift in Sources */,
+				430EC2242059932F00F84EA2 /* PayloadDecoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430EC20E205991A000F84EA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430EC22D2059933600F84EA2 /* RouterTests.swift in Sources */,
+				430EC22C2059933600F84EA2 /* RouteKitTests.swift in Sources */,
+				430EC22B2059933600F84EA2 /* PayloadDecoderTests.swift in Sources */,
+				430EC22A2059933600F84EA2 /* PatternTests.swift in Sources */,
+				430EC2292059933600F84EA2 /* AnyRouteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		435264BA204864EF00F23D74 /* PBXTargetDependency */ = {
+		430EC1EC20598F7600F84EA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 435264AD204864EF00F23D74 /* RouteKit */;
-			targetProxy = 435264B9204864EF00F23D74 /* PBXContainerItemProxy */;
+			target = 430EC1E020598F7600F84EA2 /* RouteKit-iOS */;
+			targetProxy = 430EC1EB20598F7600F84EA2 /* PBXContainerItemProxy */;
+		};
+		430EC215205991A000F84EA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 430EC2092059919F00F84EA2 /* RouteKit-macOS */;
+			targetProxy = 430EC214205991A000F84EA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		430EC1F320598F7600F84EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "${SRCROOT}/Sources/${PROJECT}/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
+				PRODUCT_NAME = "${PROJECT}";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		430EC1F420598F7600F84EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "${SRCROOT}/Sources/${PROJECT}/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
+				PRODUCT_NAME = "${PROJECT}";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		430EC1F620598F7600F84EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "${SRCROOT}/Tests/${PROJECT}Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		430EC1F720598F7600F84EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "${SRCROOT}/Tests/${PROJECT}Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		430EC21C205991A000F84EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "${SRCROOT}/Sources/${PROJECT}/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
+				PRODUCT_NAME = "${PROJECT}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		430EC21D205991A000F84EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "${SRCROOT}/Sources/${PROJECT}/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
+				PRODUCT_NAME = "${PROJECT}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		430EC21F205991A000F84EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "${SRCROOT}/Tests/${PROJECT}Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		430EC220205991A000F84EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "${SRCROOT}/Tests/${PROJECT}Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		435264C0204864EF00F23D74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,103 +692,50 @@
 			};
 			name = Release;
 		};
-		435264C3204864EF00F23D74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/RouteKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		435264C4204864EF00F23D74 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/RouteKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		435264C6204864EF00F23D74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/RouteKitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		435264C7204864EF00F23D74 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/RouteKitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		430EC1F220598F7600F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430EC1F320598F7600F84EA2 /* Debug */,
+				430EC1F420598F7600F84EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430EC1F520598F7600F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430EC1F620598F7600F84EA2 /* Debug */,
+				430EC1F720598F7600F84EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430EC21B205991A000F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430EC21C205991A000F84EA2 /* Debug */,
+				430EC21D205991A000F84EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430EC21E205991A000F84EA2 /* Build configuration list for PBXNativeTarget "RouteKit-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430EC21F205991A000F84EA2 /* Debug */,
+				430EC220205991A000F84EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		435264A8204864EF00F23D74 /* Build configuration list for PBXProject "RouteKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				435264C0204864EF00F23D74 /* Debug */,
 				435264C1204864EF00F23D74 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		435264C2204864EF00F23D74 /* Build configuration list for PBXNativeTarget "RouteKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				435264C3204864EF00F23D74 /* Debug */,
-				435264C4204864EF00F23D74 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		435264C5204864EF00F23D74 /* Build configuration list for PBXNativeTarget "RouteKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				435264C6204864EF00F23D74 /* Debug */,
-				435264C7204864EF00F23D74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
