@@ -2,9 +2,8 @@
 
 Type-safe URL routing for Swift.
 
-## Usage
-
 ```swift
+// Define routes
 struct UserIndex : Route {
     let path = "/users"
 
@@ -38,6 +37,28 @@ router.append(route: UserIndex())
 router.append(route: UserDetail())
 
 router.push(url: URL(string: "/users/42")!) // Return `UserDetailViewController`
+```
+
+Greatly inspired by [ishkawa/APIKit](https://github.com/ishkawa/APIKit), [devxoul/URLNavigator](https://github.com/devxoul/URLNavigator).
+
+## Installation
+
+### Carthage
+
+```
+github "woxtu/RouteKit" ~> 0.1
+```
+
+### CocoaPods
+
+```
+pod 'RouteKit', '~> 0.1'
+```
+
+### Swift Package Manager
+
+```
+.package(url: "https://github.com/woxtu/RouteKit.git", from: "0.1.0")
 ```
 
 ## License
