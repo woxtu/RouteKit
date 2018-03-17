@@ -1,5 +1,9 @@
 # RouteKit
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
+[![CocoaPods](https://img.shields.io/cocoapods/v/RouteKit.svg?style=flat-square)](https://cocoapods.org/pods/RouteKit)
+[![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg?style=flat-square)](https://github.com/apple/swift-package-manager)
+
 Type-safe URL routing for Swift.
 
 ```swift
