@@ -50,19 +50,19 @@ Greatly inspired by [ishkawa/APIKit](https://github.com/ishkawa/APIKit), [devxou
 ### Carthage
 
 ```
-github "woxtu/RouteKit" ~> 0.1
+github "woxtu/RouteKit" ~> 0.2
 ```
 
 ### CocoaPods
 
 ```
-pod 'RouteKit', '~> 0.1'
+pod 'RouteKit', '~> 0.2'
 ```
 
 ### Swift Package Manager
 
 ```
-.package(url: "https://github.com/woxtu/RouteKit.git", from: "0.1.0")
+.package(url: "https://github.com/woxtu/RouteKit.git", from: "0.2.0")
 ```
 
 ## License
