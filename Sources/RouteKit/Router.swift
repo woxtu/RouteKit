@@ -19,6 +19,7 @@ open class Router<T> {
         self.routes.append(AnyRoute(route))
     }
     
+    @discardableResult
     open func push(url: URL) -> T? {
         let queries = url.queryItems?.reduce(into: [:]) { result, item in
             result[item.name] = item.value ?? "true"

@@ -21,12 +21,16 @@ open class Navigator {
         self.router.append(route: route)
     }
     
-    open static func push(url: URL, animated: Bool) {
+    @discardableResult
+    open static func push(url: URL, animated: Bool) -> UIViewController? {
         if
             let viewController = self.router.push(url: url),
             let navigationController = self.rootViewController as? UINavigationController
         {
             navigationController.pushViewController(viewController, animated: animated)
+            return viewController
+        } else {
+            return nil
         }
     }
     
@@ -36,9 +40,13 @@ open class Navigator {
         }
     }
     
-    open static func present(url: URL, animated: Bool, completion: (() -> Void)? = nil) {
+    @discardableResult
+    open static func present(url: URL, animated: Bool, completion: (() -> Void)? = nil) -> UIViewController? {
         if let viewController = self.router.push(url: url) {
             self.rootViewController?.present(viewController, animated: animated, completion: completion)
+            return viewController
+        } else {
+            return nil
         }
     }
 }
