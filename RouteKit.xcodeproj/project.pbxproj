@@ -35,6 +35,8 @@
 		430EC22B2059933600F84EA2 /* PayloadDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD12D205059D400BC228D /* PayloadDecoderTests.swift */; };
 		430EC22C2059933600F84EA2 /* RouteKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435264D520486FA500F23D74 /* RouteKitTests.swift */; };
 		430EC22D2059933600F84EA2 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BFF812058347E00346484 /* RouterTests.swift */; };
+		43BD445420625AAF006B7FA4 /* NavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD445220625AA9006B7FA4 /* NavigatorTests.swift */; };
+		43BD445520625AAF006B7FA4 /* NavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD445220625AA9006B7FA4 /* NavigatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,7 @@
 		436CD129204F054100BC228D /* PatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternTests.swift; sourceTree = "<group>"; };
 		436CD12B2050589800BC228D /* PayloadDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadDecoder.swift; sourceTree = "<group>"; };
 		436CD12D205059D400BC228D /* PayloadDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadDecoderTests.swift; sourceTree = "<group>"; };
+		43BD445220625AA9006B7FA4 /* NavigatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,7 @@
 			children = (
 				435264BE204864EF00F23D74 /* Info.plist */,
 				435264DC2048705F00F23D74 /* AnyRouteTests.swift */,
+				43BD445220625AA9006B7FA4 /* NavigatorTests.swift */,
 				436CD129204F054100BC228D /* PatternTests.swift */,
 				436CD12D205059D400BC228D /* PayloadDecoderTests.swift */,
 				435264D520486FA500F23D74 /* RouteKitTests.swift */,
@@ -379,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				430EC20420598FDF00F84EA2 /* RouterTests.swift in Sources */,
+				43BD445420625AAF006B7FA4 /* NavigatorTests.swift in Sources */,
 				430EC20320598FDF00F84EA2 /* RouteKitTests.swift in Sources */,
 				430EC20220598FDF00F84EA2 /* PayloadDecoderTests.swift in Sources */,
 				430EC20120598FDF00F84EA2 /* PatternTests.swift in Sources */,
@@ -406,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				430EC22D2059933600F84EA2 /* RouterTests.swift in Sources */,
+				43BD445520625AAF006B7FA4 /* NavigatorTests.swift in Sources */,
 				430EC22C2059933600F84EA2 /* RouteKitTests.swift in Sources */,
 				430EC22B2059933600F84EA2 /* PayloadDecoderTests.swift in Sources */,
 				430EC22A2059933600F84EA2 /* PatternTests.swift in Sources */,

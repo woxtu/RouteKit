@@ -33,15 +33,14 @@ open class Navigator {
             return nil
         }
     }
-    
-    open static func pop(animated: Bool) {
-        if let navigationController = self.rootViewController as? UINavigationController {
-            navigationController.popViewController(animated: animated)
-        }
+
+    @discardableResult
+    open static func present(url: URL, animated: Bool, transform: ((UIViewController) -> UIViewController) = { $0 }) -> UIViewController? {
+        return self.present(url: url, animated: animated, transform: transform, completion: nil)
     }
     
     @discardableResult
-    open static func present(url: URL, animated: Bool, completion: (() -> Void)? = nil) -> UIViewController? {
+    open static func present(url: URL, animated: Bool, transform: ((UIViewController) -> UIViewController) = { $0 }, completion: (() -> Void)? = nil) -> UIViewController? {
         if let viewController = self.router.push(url: url) {
             self.rootViewController?.present(viewController, animated: animated, completion: completion)
             return viewController
