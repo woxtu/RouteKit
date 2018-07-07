@@ -8,22 +8,22 @@ Type-safe URL routing for Swift.
 
 ```swift
 // Define routes
-struct UserIndex : Route {
+struct UserIndex: Route {
     let path = "/users"
 
-    func map(to url: URL, parameters: [String : String], queries: [String : String]) -> UIViewController {
+    func map(to url: URL, parameters: [String: String], queries: [String: String]) -> UIViewController {
         return UserIndexViewController()
     }
 }
 
-struct UserDetail : Route {
+struct UserDetail: Route {
     let path = "/users/{id}"
 
-    struct Parameters : Decodable {
+    struct Parameters: Decodable {
         let id: Int
     }
 
-    func map(to url: URL, parameters: Parameters, queries: [String : String]) -> UIViewController {
+    func map(to url: URL, parameters: Parameters, queries: [String: String]) -> UIViewController {
         return UserDetailViewController(id: parameters.id)
     }
 }

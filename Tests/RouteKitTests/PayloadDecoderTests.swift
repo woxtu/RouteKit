@@ -11,45 +11,45 @@ import XCTest
 
 class PayloadDecoderTests: XCTestCase {
     func testDecodeString() {
-        struct TestStruct : Decodable {
+        struct TestStruct: Decodable {
             let x: String
         }
         
-        let payload = ["x" : "x"]
+        let payload = ["x": "x"]
         XCTAssertNoThrow(try PayloadDecoder().decode(TestStruct.self, from: payload))
         XCTAssertEqual(try PayloadDecoder().decode(TestStruct.self, from: payload).x, "x")
     }
     
     func testDecodeInt() {
-        struct TestStruct : Decodable {
+        struct TestStruct: Decodable {
             let x: Int
         }
         
-        let payload = ["x" : "42"]
+        let payload = ["x": "42"]
         XCTAssertNoThrow(try PayloadDecoder().decode(TestStruct.self, from: payload))
         XCTAssertEqual(try PayloadDecoder().decode(TestStruct.self, from: payload).x, 42)
     }
     
     func testDecodeOptional() {
-        struct TestStruct : Decodable {
+        struct TestStruct: Decodable {
             let x: String?
         }
         
-        let payload = [String : String]()
+        let payload = [String: String]()
         XCTAssertNoThrow(try PayloadDecoder().decode(TestStruct.self, from: payload))
         XCTAssertEqual(try PayloadDecoder().decode(TestStruct.self, from: payload).x, nil)
     }
 
     func testDecodeEnum() {
-        enum TestEnum : String, Decodable {
+        enum TestEnum: String, Decodable {
             case type
         }
         
-        struct TestStruct : Decodable {
+        struct TestStruct: Decodable {
             let x: TestEnum
         }
         
-        let payload = ["x" : "type"]
+        let payload = ["x": "type"]
         XCTAssertNoThrow(try PayloadDecoder().decode(TestStruct.self, from: payload))
         XCTAssertEqual(try PayloadDecoder().decode(TestStruct.self, from: payload).x, .type)
     }

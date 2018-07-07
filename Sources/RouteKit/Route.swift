@@ -10,10 +10,10 @@ import Foundation
 
 public protocol Route {
     associatedtype Response
-    associatedtype Parameters : Decodable = [String : String]
-    associatedtype Queries : Decodable = [String : String]
-    
+    associatedtype Parameters: Decodable = [String: String]
+    associatedtype Queries: Decodable = [String: String]
+
     var path: String { get }
-    
+
     func map(to url: URL, parameters: Parameters, queries: Queries) -> Response
 }

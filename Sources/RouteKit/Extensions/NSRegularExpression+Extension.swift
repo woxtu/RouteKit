@@ -10,6 +10,6 @@ import Foundation
 
 extension NSRegularExpression {
     func stringByReplacingMatches(in string: String, options: NSRegularExpression.MatchingOptions = [], withTemplate templ: String) -> String {
-        return self.stringByReplacingMatches(in: string, options: options, range: NSMakeRange(0, string.count), withTemplate: templ)
+        return self.stringByReplacingMatches(in: string, options: options, range: NSRange(location: 0, length: string.count), withTemplate: templ)
     }
 }

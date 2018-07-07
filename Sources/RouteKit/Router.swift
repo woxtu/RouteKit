@@ -15,7 +15,7 @@ open class Router<T> {
         
     }
     
-    open func append<R>(route: R) where R : Route, R.Response == T {
+    open func append<R>(route: R) where R: Route, R.Response == T {
         self.routes.append(AnyRoute(route))
     }
     

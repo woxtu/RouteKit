@@ -10,9 +10,9 @@ import Foundation
 
 struct AnyRoute<T> {
     let pattern: Pattern
-    let map: (URL, [String : String], [String : String]) -> T?
+    let map: (URL, [String: String], [String: String]) -> T?
     
-    init<R>(_ route: R) where R : Route, R.Response == T {
+    init<R>(_ route: R) where R: Route, R.Response == T {
         self.pattern = Pattern(string: route.path)
 
         self.map = { url, parameters, queries in

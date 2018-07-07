@@ -16,14 +16,14 @@ class RouterTests: XCTestCase {
             let q: String?
         }
         
-        struct TestRoute : Route {
+        struct TestRoute: Route {
             let path = "/{p}"
             
-            struct Parameters : Decodable {
+            struct Parameters: Decodable {
                 let p: String
             }
             
-            struct Queries : Decodable {
+            struct Queries: Decodable {
                 let q: String?
             }
             

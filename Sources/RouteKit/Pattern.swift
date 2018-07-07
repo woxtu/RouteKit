@@ -39,8 +39,8 @@ struct Pattern {
             .map(Component.init)
     }
     
-    func match(url: URL) -> [String : String]? {
-        let pathComponents = [url.host].flatMap { $0 } + url.pathComponents.dropFirst() // drop "/"
+    func match(url: URL) -> [String: String]? {
+        let pathComponents = [url.host].compactMap { $0 } + url.pathComponents.dropFirst() // drop "/"
         
         if self.scheme == url.scheme && self.pathComponents == pathComponents.map(Component.init) {
             return zip(self.pathComponents, pathComponents).reduce(into: [:]) { result, component in
@@ -54,8 +54,8 @@ struct Pattern {
     }
 }
 
-extension Pattern.Component : Equatable {
-    static func ==(lhs: Pattern.Component, rhs: Pattern.Component) -> Bool {
+extension Pattern.Component: Equatable {
+    static func == (lhs: Pattern.Component, rhs: Pattern.Component) -> Bool {
         switch (lhs, rhs) {
         case let (.constant(lhs), .constant(rhs)): return lhs == rhs
         case let (.variable(lhs), .variable(rhs)): return lhs == rhs

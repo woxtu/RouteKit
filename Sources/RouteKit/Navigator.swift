@@ -17,7 +17,7 @@ open class Navigator {
         return UIApplication.shared.keyWindow?.rootViewController
     }
 
-    open static func append<R>(route: R) where R : Route, R.Response == UIViewController {
+    open static func append<R>(route: R) where R: Route, R.Response == UIViewController {
         self.router.append(route: route)
     }
     

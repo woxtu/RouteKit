@@ -24,6 +24,6 @@ class PatternTests: XCTestCase {
     
     func testPatternMatch() {
         XCTAssertNil(Pattern(string: "/x1/{x2}").match(url: URL(string: "/")!))
-        XCTAssertEqual(Pattern(string: "/x1/{x2}").match(url: URL(string: "/x1/x2")!)!, ["x2" : "x2"])
+        XCTAssertEqual(Pattern(string: "/x1/{x2}").match(url: URL(string: "/x1/x2")!)!, ["x2": "x2"])
     }
 }

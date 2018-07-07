@@ -9,20 +9,20 @@
 import Foundation
 
 class PayloadDecoder {
-    func decode<T>(_ type: T.Type = T.self, from data: [String : String]) throws -> T where T : Decodable {
+    func decode<T>(_ type: T.Type = T.self, from data: [String: String]) throws -> T where T: Decodable {
         return try T(from: InnerDecoder(data: data))
     }
 
-    class InnerDecoder : Decoder {
-        let data: [String : String]
+    class InnerDecoder: Decoder {
+        let data: [String: String]
         var codingPath = [CodingKey]()
-        let userInfo = [CodingUserInfoKey : Any]()
+        let userInfo = [CodingUserInfoKey: Any]()
         
-        init(data: [String : String]) {
+        init(data: [String: String]) {
             self.data = data
         }
         
-        func container<Key>(keyedBy type: Key.Type) throws -> KeyedDecodingContainer<Key> where Key : CodingKey {
+        func container<Key>(keyedBy type: Key.Type) throws -> KeyedDecodingContainer<Key> where Key: CodingKey {
             return KeyedDecodingContainer(InnerKeyedDecodingContainer(referencing: self))
         }
         
@@ -35,7 +35,7 @@ class PayloadDecoder {
         }
     }
 
-    class InnerKeyedDecodingContainer<Key> : KeyedDecodingContainerProtocol where Key : CodingKey {
+    class InnerKeyedDecodingContainer<Key>: KeyedDecodingContainerProtocol where Key: CodingKey {
         let decoder: InnerDecoder
         
         var codingPath: [CodingKey] {
@@ -43,7 +43,7 @@ class PayloadDecoder {
         }
         
         var allKeys: [Key] {
-            return self.decoder.data.keys.flatMap(Key.init)
+            return self.decoder.data.keys.compactMap(Key.init)
         }
         
         init(referencing decoder: InnerDecoder) {
@@ -58,7 +58,7 @@ class PayloadDecoder {
             return self.decoder.data[key.stringValue] == nil
         }
         
-        func decode<T>(_ type: T.Type, forKey key: Key) throws -> T where T : Decodable & LosslessStringConvertible {
+        func decode<T>(_ type: T.Type, forKey key: Key) throws -> T where T: Decodable & LosslessStringConvertible {
             guard let rawValue = self.decoder.data[key.stringValue] else {
                 throw DecodingError.valueNotFound(type, .init(codingPath: self.codingPath, debugDescription: "No value associated with key '\(key)'."))
             }
@@ -70,13 +70,13 @@ class PayloadDecoder {
             return value
         }
         
-        func decode<T>(_ type: T.Type, forKey key: Key) throws -> T where T : Decodable {
+        func decode<T>(_ type: T.Type, forKey key: Key) throws -> T where T: Decodable {
             self.decoder.codingPath.append(key)
             defer { self.decoder.codingPath.removeLast() }
             return try T(from: self.decoder)
         }
         
-        func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type, forKey key: Key) throws -> KeyedDecodingContainer<NestedKey> where NestedKey : CodingKey {
+        func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type, forKey key: Key) throws -> KeyedDecodingContainer<NestedKey> where NestedKey: CodingKey {
             fatalError("It should not be called")
         }
         
@@ -93,7 +93,7 @@ class PayloadDecoder {
         }
     }
 
-    class InnerSingleValueDecodingContainer : SingleValueDecodingContainer {
+    class InnerSingleValueDecodingContainer: SingleValueDecodingContainer {
         let decoder: InnerDecoder
         
         var codingPath: [CodingKey] {
@@ -112,7 +112,7 @@ class PayloadDecoder {
             }
         }
         
-        func decode<T>(_ type: T.Type) throws -> T where T : Decodable & LosslessStringConvertible {
+        func decode<T>(_ type: T.Type) throws -> T where T: Decodable & LosslessStringConvertible {
             guard let key = self.codingPath.last else {
                 fatalError("It should not be called")
             }
@@ -128,7 +128,7 @@ class PayloadDecoder {
             return value
         }
         
-        func decode<T>(_ type: T.Type) throws -> T where T : Decodable {
+        func decode<T>(_ type: T.Type) throws -> T where T: Decodable {
             return try T(from: self.decoder)
         }
     }
