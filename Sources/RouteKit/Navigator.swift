@@ -42,7 +42,7 @@ open class Navigator {
     @discardableResult
     open static func present(url: URL, animated: Bool, transform: ((UIViewController) -> UIViewController) = { $0 }, completion: (() -> Void)? = nil) -> UIViewController? {
         if let viewController = self.router.push(url: url) {
-            self.rootViewController?.present(viewController, animated: animated, completion: completion)
+            self.rootViewController?.present(transform(viewController), animated: animated, completion: completion)
             return viewController
         } else {
             return nil
