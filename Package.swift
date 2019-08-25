@@ -7,17 +7,20 @@ let package = Package(
     products: [
         .library(
             name: "RouteKit",
-            targets: ["RouteKit"]),
+            targets: ["RouteKit"]
+        ),
     ],
     dependencies: [
     ],
     targets: [
         .target(
             name: "RouteKit",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "RouteKitTests",
-            dependencies: ["RouteKit"]),
+            dependencies: ["RouteKit"]
+        ),
     ],
     swiftLanguageVersions: [4]
 )

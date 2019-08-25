@@ -12,37 +12,38 @@ struct Pattern {
     enum Component {
         case constant(String)
         case variable(String)
-        
+
         init(_ string: String) {
-            if string.hasPrefix("{") && string.hasSuffix("}") {
+            if string.hasPrefix("{"), string.hasSuffix("}") {
                 self = .variable(String(string.dropFirst().dropLast()))
             } else {
                 self = .constant(string)
             }
         }
     }
-    
+
     let scheme: String?
     let pathComponents: [Component]
-    
+
     init(string: String) {
+        // swiftlint:disable:next force_try identifier_name
         let re = try! NSRegularExpression(pattern: "/\\{.+?\\}(?=[/?]|$)")
         let urlComponents = URLComponents(string: re.stringByReplacingMatches(in: string, withTemplate: "/-"))
-        
-        self.scheme = urlComponents?.scheme
-        
-        self.pathComponents = string
+
+        scheme = urlComponents?.scheme
+
+        pathComponents = string
             .replacingOccurrences(of: urlComponents?.scheme.map { "\($0):" } ?? "", with: "")
             .replacingOccurrences(of: urlComponents?.query.map { "?\($0)" } ?? "", with: "")
             .split(separator: "/")
             .map(String.init)
             .map(Component.init)
     }
-    
+
     func match(url: URL) -> [String: String]? {
         let pathComponents = [url.host].compactMap { $0 } + url.pathComponents.dropFirst() // drop "/"
-        
-        if self.scheme == url.scheme && self.pathComponents == pathComponents.map(Component.init) {
+
+        if scheme == url.scheme, self.pathComponents == pathComponents.map(Component.init) {
             return zip(self.pathComponents, pathComponents).reduce(into: [:]) { result, component in
                 if case let .variable(name) = component.0 {
                     result?[name] = component.1

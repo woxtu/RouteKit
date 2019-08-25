@@ -7,19 +7,19 @@
 //
 
 #if os(iOS) || os(tvOS)
-import UIKit
-import XCTest
-@testable import RouteKit
+    @testable import RouteKit
+    import UIKit
+    import XCTest
 
-class NavigatorTests: XCTestCase {
-    func test() {
-        let transform = { (vc: UIViewController) -> UIViewController in vc }
-        let completion = { () -> Void in }
-        
-        Navigator.present(url: URL(string: "/")!, animated: true)
-        Navigator.present(url: URL(string: "/")!, animated: true, transform: transform)
-        Navigator.present(url: URL(string: "/")!, animated: true, completion: completion)
-        Navigator.present(url: URL(string: "/")!, animated: true, transform: transform, completion: completion)
+    class NavigatorTests: XCTestCase {
+        func test() {
+            let transform = { (vc: UIViewController) -> UIViewController in vc }
+            let completion = { () -> Void in }
+
+            Navigator.present(url: URL(string: "/")!, animated: true)
+            Navigator.present(url: URL(string: "/")!, animated: true, transform: transform)
+            Navigator.present(url: URL(string: "/")!, animated: true, completion: completion)
+            Navigator.present(url: URL(string: "/")!, animated: true, transform: transform, completion: completion)
+        }
     }
-}
 #endif

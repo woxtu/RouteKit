@@ -10,30 +10,27 @@ import Foundation
 
 open class Router<T> {
     private var routes = [AnyRoute<T>]()
-    
-    public init() {
-        
-    }
-    
+
+    public init() {}
+
     open func append<R>(route: R) where R: Route, R.Response == T {
-        self.routes.append(AnyRoute(route))
+        routes.append(AnyRoute(route))
     }
-    
+
     @discardableResult
     open func push(url: URL) -> T? {
         let queries = url.queryItems?.reduce(into: [:]) { result, item in
             result[item.name] = item.value ?? "true"
         } ?? [:]
-                
-        for route in self.routes {
+
+        for route in routes {
             if
                 let parameters = route.pattern.match(url: url),
-                let response = route.map(url, parameters, queries)
-            {
+                let response = route.map(url, parameters, queries) {
                 return response
             }
         }
-        
+
         return nil
     }
 }

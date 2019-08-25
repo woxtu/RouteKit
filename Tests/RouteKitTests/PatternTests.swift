@@ -6,8 +6,8 @@
 //  Copyright (c) 2018 woxtu. All rights reserved.
 //
 
-import XCTest
 @testable import RouteKit
+import XCTest
 
 class PatternTests: XCTestCase {
     func testPattern1() {
@@ -21,7 +21,7 @@ class PatternTests: XCTestCase {
         XCTAssertEqual(pattern.scheme, nil)
         XCTAssertEqual(pattern.pathComponents, [.constant("x1"), .variable("x2")])
     }
-    
+
     func testPatternMatch() {
         XCTAssertNil(Pattern(string: "/x1/{x2}").match(url: URL(string: "/")!))
         XCTAssertEqual(Pattern(string: "/x1/{x2}").match(url: URL(string: "/x1/x2")!)!, ["x2": "x2"])

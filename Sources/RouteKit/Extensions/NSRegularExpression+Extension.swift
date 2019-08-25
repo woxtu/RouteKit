@@ -9,7 +9,9 @@
 import Foundation
 
 extension NSRegularExpression {
+    // swiftlint:disable:next line_length
     func stringByReplacingMatches(in string: String, options: NSRegularExpression.MatchingOptions = [], withTemplate templ: String) -> String {
-        return self.stringByReplacingMatches(in: string, options: options, range: NSRange(location: 0, length: string.count), withTemplate: templ)
+        // swiftlint:disable:next line_length
+        return stringByReplacingMatches(in: string, options: options, range: NSRange(location: 0, length: string.count), withTemplate: templ)
     }
 }

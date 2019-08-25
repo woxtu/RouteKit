@@ -11,11 +11,11 @@ import Foundation
 struct AnyRoute<T> {
     let pattern: Pattern
     let map: (URL, [String: String], [String: String]) -> T?
-    
-    init<R>(_ route: R) where R: Route, R.Response == T {
-        self.pattern = Pattern(string: route.path)
 
-        self.map = { url, parameters, queries in
+    init<R>(_ route: R) where R: Route, R.Response == T {
+        pattern = Pattern(string: route.path)
+
+        map = { url, parameters, queries in
             do {
                 let parameters = try PayloadDecoder().decode(R.Parameters.self, from: parameters)
                 let queries = try PayloadDecoder().decode(R.Queries.self, from: queries)
