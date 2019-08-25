@@ -299,18 +299,22 @@
 				TargetAttributes = {
 					430EC1E020598F7600F84EA2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					430EC1E820598F7600F84EA2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					430EC2092059919F00F84EA2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					430EC211205991A000F84EA2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -321,6 +325,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 435264A4204864EF00F23D74;
 			productRefGroup = 435264AF204864EF00F23D74 /* Products */;
@@ -411,7 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat . --swiftversion 4.2 --stripunusedargs closure-only\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat . --swiftversion 5.0 --stripunusedargs closure-only\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 		439B58762312810600BA9D21 /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -429,7 +434,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat . --swiftversion 4.2 --stripunusedargs closure-only\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat . --swiftversion 5.0 --stripunusedargs closure-only\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -522,7 +527,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
 				PRODUCT_NAME = "${PROJECT}";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -543,7 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = woxtu.RouteKit;
 				PRODUCT_NAME = "${PROJECT}";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -557,7 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -571,7 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -595,7 +600,7 @@
 				PRODUCT_NAME = "${PROJECT}";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -618,7 +623,7 @@
 				PRODUCT_NAME = "${PROJECT}";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -635,7 +640,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -652,7 +657,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "woxtu.RouteKit-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -707,7 +712,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -763,7 +767,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
