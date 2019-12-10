@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = 'RouteKit'
-  spec.version       = '0.2.1'
+  spec.version       = '0.3.0'
   spec.license       = { :type => 'MIT', :file => 'LICENSE-MIT' }
   spec.homepage      = 'https://github.com/woxtu/RouteKit'
   spec.author        = { 'woxtu' => 'woxtup@gmail.com' }
