@@ -12,14 +12,16 @@
     import XCTest
 
     class NavigatorTests: XCTestCase {
+		let navigtor = Navigator()
+
         func test() {
             let transform = { (vc: UIViewController) -> UIViewController in vc }
             let completion = { () -> Void in }
 
-            Navigator.present(url: URL(string: "/")!, animated: true)
-            Navigator.present(url: URL(string: "/")!, animated: true, transform: transform)
-            Navigator.present(url: URL(string: "/")!, animated: true, completion: completion)
-            Navigator.present(url: URL(string: "/")!, animated: true, transform: transform, completion: completion)
+			navigtor.present(url: URL(string: "/")!, animated: true)
+			navigtor.present(url: URL(string: "/")!, animated: true, transform: transform)
+			navigtor.present(url: URL(string: "/")!, animated: true, completion: completion)
+			navigtor.present(url: URL(string: "/")!, animated: true, transform: transform, completion: completion)
         }
     }
 #endif

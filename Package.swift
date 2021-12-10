@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "RouteKit",
+	platforms: [
+		.iOS(.v14),
+	],
     products: [
         .library(
             name: "RouteKit",
